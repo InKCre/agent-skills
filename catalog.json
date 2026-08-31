@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "assets": [
+    {
+      "id": "edit-svc-shared-docs",
+      "kind": "skill",
+      "owner": "InKCre/docs",
+      "path": "00-meta/skills/edit-svc-shared-docs",
+      "consumers": [
+        "InKCre/core-py",
+        "InKCre/client-web"
+      ],
+      "delivery": "read-only Hub mount with thin Spoke wrapper"
+    },
+    {
+      "id": "ui-web",
+      "kind": "product-skill",
+      "owner": "InKCre/ui",
+      "path": "packages/web/skills/ui-web",
+      "consumers": [
+        "@inkcre/ui-web package consumers"
+      ],
+      "delivery": "published npm package"
+    }
+  ]
+}
