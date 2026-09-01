@@ -2,13 +2,23 @@
   "schema_version": 1,
   "assets": [
     {
+      "id": "inkcre-common-instructions",
+      "kind": "instruction",
+      "owner": "InKCre/agent-skills",
+      "path": "global/AGENTS.md",
+      "consumers": [],
+      "delivery": "reviewed checkout with conflict-preserving user-scope installer"
+    },
+    {
       "id": "edit-svc-shared-docs",
       "kind": "skill",
       "owner": "InKCre/docs",
       "path": "00-meta/skills/edit-svc-shared-docs",
       "consumers": [
         "InKCre/core-py",
-        "InKCre/client-web"
+        "InKCre/client-web",
+        "InKCre/ui",
+        "InKCre/ext-reg"
       ],
       "delivery": "read-only Hub mount with thin Spoke wrapper"
     },
